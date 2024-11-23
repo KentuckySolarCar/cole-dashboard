@@ -4,7 +4,7 @@ import 'package:uksc_dashboard/models/base_model.dart';
 class Status extends BaseModel {
   Status() : super({
     'Vehicle.Chassis.WheelPedal' : 'pedal',
-    'Vehicle.Chassis.ForwardReverse' : '1',
+    'Vehicle.Chassis.ForwardReverse' : '0',
     //Brake lockout goes here
   });
 

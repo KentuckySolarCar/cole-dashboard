@@ -118,7 +118,7 @@ class SpeedDisplay extends StatelessWidget {
                   const Text(
                     'Cruise Speed',
                     style: TextStyle(
-                      fontSize: 19,
+                      fontSize: 16,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                     ),

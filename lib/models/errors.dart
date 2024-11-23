@@ -6,7 +6,7 @@ import 'package:uksc_dashboard/models/base_model.dart';
 class Errors extends BaseModel {
   Errors()
       : super({
-          'Vehicle.Chassis.SDStatus': '0',
+          'Vehicle.Chassis.SDStatus': '1',
         });
 
   bool get bottomShellError => double.parse(data['Vehicle.Chassis.SDStatus']) == 0;

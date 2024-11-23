@@ -11,7 +11,9 @@ import 'package:uksc_dashboard/widgets/splash_screen.dart';
 final log = Logger('main');
 
 const defaultPort = 8090;
+//const defaultPort = 55556;
 const defaultHost = '127.0.0.1';
+//const defaultHost = 'localhost';
 const defaultDashboard = 'testing';
 
 void main(List<String> args) {

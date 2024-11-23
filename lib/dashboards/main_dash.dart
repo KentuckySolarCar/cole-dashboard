@@ -121,6 +121,7 @@ class MainDashboard extends StatelessWidget {
               ),
             ],
           ),
+          // This is not fully implemented yet
           if (!brakeLockout)  // Show popup if brake is not pressed
             Center(
               child: Container(

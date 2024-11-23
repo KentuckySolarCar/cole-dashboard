@@ -8,7 +8,7 @@ class Battery extends BaseModel {
           'Vehicle.Powertrain.TractionBattery.StateOfCharge.PackSOC': '0',
           'Vehicle.Powertrain.TractionBattery.PackCurrent': '0.0',
           'Vehicle.Powertrain.TractionBattery.CurrentVoltage': '0,0',
-          'Vehicle.Powertrain.ElectricMotor.MotorLeft.ControllerCurrent': '0.0', //logs never set this value to not 0
+          'Vehicle.Powertrain.ElectricMotor.MotorLeft.ControllerCurrent': '0.0', //TODO figure out why the logs never set this value to not 0
           'Vehicle.Powertrain.TractionBattery.AverageTemp' : '0',
           'Vehicle.LowVoltageBattery.CurrentVoltage' : '0.0',
         });
