@@ -1,6 +1,7 @@
 import 'package:provider/provider.dart';
 import 'package:uksc_dashboard/models/base_model.dart';
 
+//TODO assess whether this stuff is gonna be used for anything other than the initial widget
 enum DriveMode { forward, reverse }
 
 class CarStatus extends BaseModel {
@@ -29,6 +30,9 @@ class CarStatus extends BaseModel {
   @override
   ChangeNotifierProvider<CarStatus> get provider => ChangeNotifierProvider.value(value: this);
 }
+
+// As of now we need a different method from the one Cole wrote to fetch time
+// Thus we have created the timing model
 
 // class CarTime extends BaseModel {
 //   CarTime() : super({'time': 0, 'last_bottom_shell_power_cycle': 0, 'lap_time': 0});

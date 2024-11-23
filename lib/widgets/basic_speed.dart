@@ -54,7 +54,7 @@ class BasicSpeedGauge extends StatelessWidget {
             annotations: <GaugeAnnotation>[
               GaugeAnnotation(
                   widget: Text('${speed.mph.toStringAsFixed(0)} MPH',
-                      style: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+                      style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
                   angle: 90,
                   positionFactor: 0.5)
             ],

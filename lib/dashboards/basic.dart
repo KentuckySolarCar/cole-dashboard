@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:uksc_dashboard/widgets/basic_speed.dart';
 import 'package:uksc_dashboard/widgets/status_bar.dart';
+import 'package:uksc_dashboard/widgets/throttle.dart';
 
 /// A basic dashboard displaying simple stuff such as the speed.
 ///
@@ -11,12 +12,12 @@ class BasicDashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: const StatusBar(),
+    return const Scaffold(
+        appBar: StatusBar(),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [BasicSpeed(), BasicSpeedGauge()],
+            children: [BasicSpeed(), BasicSpeedGauge(), Throttle()],
           ),
         ));
   }

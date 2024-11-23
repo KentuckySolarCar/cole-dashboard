@@ -13,24 +13,25 @@ class _Motor extends BaseModel {
           'Vehicle.PowerTrain.ElectricMotor.$instance.Temperature': '0',
           'Vehicle.PowerTrain.ElectricMotor.$instance.Power': '0',
           'Vehicle.PowerTrain.ElectricMotor.$instance.Torque': '0',
+          'Vehicle.Powertrain.ElectricMotor.$instance.ControllerVoltage': '0.0',
+          // Used to be .MotorTemp but temperature fetching has been changed a little
         });
-
-
-  // TODO: getter methods
 
 }
 
 // create classes for both motors so we can have separate providers
 class LeftMotor extends _Motor {
-  LeftMotor() : super('Left');
+  LeftMotor() : super('MotorLeft');
 
+  double get leftMotorTemp => double.parse(data['Vehicle.Powertrain.ElectricMotor.MotorLeft.ControllerVoltage']);
+  
   @override
   ChangeNotifierProvider<LeftMotor> get provider =>
       ChangeNotifierProvider.value(value: this);
 }
 
 class RightMotor extends _Motor {
-  RightMotor() : super('Right');
+  RightMotor() : super('MotorRight');
 
   @override
   ChangeNotifierProvider<RightMotor> get provider =>
